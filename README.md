@@ -1,4 +1,4 @@
-# Event-Driven Ride-Sharing Backend
+# 🚖 Event-Driven Ride-Sharing Backend
 
 A distributed backend platform for ride-sharing, built with **Python**, **FastAPI**, and **Apache Kafka**. Each business domain is an independently deployable microservice that communicates exclusively through Kafka events — no direct service-to-service calls.
 
@@ -10,7 +10,7 @@ A distributed backend platform for ride-sharing, built with **Python**, **FastAP
 
 ---
 
-## What This Is
+## 📌 What This Is
 
 A backend system that handles the full ride lifecycle — from a rider submitting a request to trip completion, payment, and fraud detection — using asynchronous, event-driven communication between services.
 
@@ -18,7 +18,7 @@ Built to demonstrate real distributed systems patterns: idempotent producers, fa
 
 ---
 
-## Architecture
+## 🏗️ Architecture
 
 ```mermaid
 flowchart LR
@@ -46,7 +46,7 @@ flowchart LR
 
 ---
 
-## Services
+## 🧩 Services
 
 | Service | Responsibility | Key Tech |
 |---|---|---|
@@ -63,7 +63,7 @@ flowchart LR
 
 ---
 
-## Key Design Decisions
+## ⚙️ Key Design Decisions
 
 **Idempotent Kafka Producer**
 The rider service uses `enable.idempotence: True` with `acks: all`, ensuring exactly-once delivery semantics even under retries. Combined with exponential backoff retry logic, messages are never lost or duplicated on transient failures.
@@ -79,7 +79,7 @@ Supports `STANDARD`, `PREMIUM`, and `POOL` ride types, with pricing and matching
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -94,7 +94,7 @@ Supports `STANDARD`, `PREMIUM`, and `POOL` ride types, with pricing and matching
 
 ---
 
-## Getting Started
+## 🖥️ Getting Started
 
 ### Prerequisites
 - Docker and Docker Compose installed
@@ -149,7 +149,7 @@ curl -X POST http://localhost:8000/api/rides/request \
 
 ---
 
-## API Endpoints
+## 📡 API Endpoints
 
 | Service | Method | Endpoint | Description |
 |---|---|---|---|
@@ -157,7 +157,7 @@ curl -X POST http://localhost:8000/api/rides/request \
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
 ```
 kafka-ride-sharing/
@@ -179,7 +179,7 @@ kafka-ride-sharing/
 
 ---
 
-## What I Built
+## 💡 What I Built
 
 This project focuses on the backend engineering challenges that make distributed systems hard in production:
 
@@ -190,7 +190,7 @@ This project focuses on the backend engineering challenges that make distributed
 
 ---
 
-## Future Roadmap
+## 🚀 Future Roadmap
 
 - [ ] Add Kubernetes manifests for production deployment
 - [ ] Implement a dead-letter queue (DLQ) for failed message handling
@@ -203,7 +203,7 @@ This project focuses on the backend engineering challenges that make distributed
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome. To contribute:
 
@@ -225,7 +225,7 @@ Please keep PRs focused on a single concern and include a clear description of w
 
 ---
 
-## Join the Community
+## 💬 Join the Community
 
 Have ideas, questions, or feedback? Feel free to:
 
@@ -235,7 +235,7 @@ Have ideas, questions, or feedback? Feel free to:
 
 ---
 
-## Acknowledgements
+## 🙌 Acknowledgements
 
 - [Apache Kafka](https://kafka.apache.org/) — the backbone of the event-driven architecture
 - [Confluent](https://www.confluent.io/) — for the Kafka Docker images and Schema Registry
@@ -245,7 +245,7 @@ Have ideas, questions, or feedback? Feel free to:
 
 ---
 
-## License
+## 🛡️ License
 
 This project is licensed under the [MIT License](LICENSE).
 
