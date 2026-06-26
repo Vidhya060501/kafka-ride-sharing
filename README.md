@@ -187,3 +187,72 @@ This project focuses on the backend engineering challenges that make distributed
 - **Independent scalability** — each service scales without coordination
 - **State consistency** across services using event sourcing over shared Kafka topics
 - **Clean domain separation** — no shared databases between services
+
+---
+
+## Future Roadmap
+
+- [ ] Add Kubernetes manifests for production deployment
+- [ ] Implement a dead-letter queue (DLQ) for failed message handling
+- [ ] Add distributed tracing with OpenTelemetry and Jaeger
+- [ ] Replace Zookeeper with KRaft (Kafka's native consensus layer)
+- [ ] Add a WebSocket gateway for real-time ride status updates to clients
+- [ ] Implement circuit breaker pattern for inter-service resilience
+- [ ] Build a Grafana + Prometheus monitoring dashboard
+- [ ] Add end-to-end integration tests with Testcontainers
+
+---
+
+## Contributing
+
+Contributions are welcome. To contribute:
+
+1. Fork the repository
+2. Create a feature branch:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add: your feature description"
+   ```
+4. Push and open a Pull Request:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+Please keep PRs focused on a single concern and include a clear description of what you changed and why.
+
+---
+
+## Join the Community
+
+Have ideas, questions, or feedback? Feel free to:
+
+- Open an [Issue](https://github.com/Vidhya060501/kafka-ride-sharing/issues) for bugs or feature requests
+- Start a [Discussion](https://github.com/Vidhya060501/kafka-ride-sharing/discussions) for architecture questions or suggestions
+- Connect on [LinkedIn](https://www.linkedin.com/in/vidhyadharibandaru) for collaboration
+
+---
+
+## Acknowledgements
+
+- [Apache Kafka](https://kafka.apache.org/) — the backbone of the event-driven architecture
+- [Confluent](https://www.confluent.io/) — for the Kafka Docker images and Schema Registry
+- [FastAPI](https://fastapi.tiangolo.com/) — for the clean, async-friendly API framework
+- [confluent-kafka-python](https://github.com/confluentinc/confluent-kafka-python) — Kafka client library
+- [Pydantic](https://docs.pydantic.dev/) — for request validation and data modelling
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+<p align="center">
+  Built by <a href="https://github.com/Vidhya060501">Vidhyadhari Bandaru</a> · 
+  <a href="https://www.linkedin.com/in/vidhyadharibandaru">LinkedIn</a> · 
+  <a href="mailto:vidhyadhari060501@gmail.com">Email</a>
+</p>
